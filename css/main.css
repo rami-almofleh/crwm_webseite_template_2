@@ -291,13 +291,11 @@ footer i {
   border-bottom: 1px solid #f1f1f1;
   color: #cccccc;
 }
-.navbar-focus {
+
+
+#nav.navbar-focus, #nav {
   background-color: rgba(57, 57, 141, .8);
 }
-
-
-
-
 
 
 
@@ -318,6 +316,9 @@ footer i {
   }
   .header .intro h3 {
     font-size: 1.3em;
+  }
+  #nav {
+    background: none;
   }
 }
 
