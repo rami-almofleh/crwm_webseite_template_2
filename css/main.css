@@ -169,6 +169,139 @@ textarea {
   clear: both;
 }
 
+
+
+
+
+
+/* ==========================================================================
+   Mein Style
+   ========================================================================== */
+.btn-primary {
+  background-color: #39398d!important;
+}
+
+
+.primary-hr {
+  background-color: #39398d;
+  height: 2px;
+  width: 25%;
+  margin: auto;
+}
+
+
+
+/*
+  HEADER
+*/
+.header {
+  background-image: url("../img/header.jpg");
+  background-size: cover;
+}
+.header .header-overlay {
+  background-image: linear-gradient(to right, #39398d, rgba(48, 48, 133, 0.3));
+}
+.header .intro {
+  height: 70vh;
+}
+.header .intro h1 {
+  font-size: 2.4em;
+}
+.header .intro h3 {
+  font-size: 1em;
+}
+
+
+
+/*
+  SECTION 2
+*/
+.welcome-section .container > p {
+  max-width: 70%;
+}
+.welcome-section .container .row .col-sm-6:nth-child(1) .card {
+  border-bottom: 3px solid #39398d;
+}
+.welcome-section .container .row .col-sm-6:nth-child(2) .card {
+  border-bottom: 3px solid #6b6bcb;
+}
+.welcome-section .container .row .col-sm-6:nth-child(3) .card {
+  border-bottom: 3px solid #a1a1d6;
+}
+
+.welcome-section .container .row .card .card-body {
+  position: relative;
+  padding-top: 2rem;
+}
+.welcome-section .container .row .card .card-body:after {
+  content: attr(data-after);
+  z-index: 1;
+  position: absolute;
+  height: 3rem;
+  width: 3rem;
+  top: -1.5rem;
+  left: calc(50% - 1.5rem);
+  background-color: #39398d;
+  color: white;
+  border-radius: 50%;
+  opacity: .9;
+  padding-top: .7rem;
+  text-align: center;
+}
+
+
+/*
+  SECTION 3
+*/
+.what-we-doing-section {
+  background-color: #f1f1f1
+}
+.what-we-doing-section .container > p {
+  max-width: 70%;
+}
+
+.what-we-doing-section i {
+  font-size: 2rem;
+  color: #39398d;
+  border: 2px solid #39398d;
+  border-radius: 50%;
+}
+
+/*
+  FOOTER
+*/
+footer {
+  background-color: rgba(57, 57, 141, .9);
+}
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+footer a:hover {
+  color: #cccccc;
+}
+footer i {
+  font-size: 2rem;
+}
+
+/*
+  NAVBAR
+*/
+.navbar .nav-link:hover {
+  border-bottom: 1px solid #f1f1f1;
+  color: #cccccc;
+}
+.navbar-focus {
+  background-color: rgba(57, 57, 141, .8);
+}
+
+
+
+
+
+
+
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -177,12 +310,28 @@ textarea {
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
+  .contact-us-section form {
+    max-width: 60%;
+  }
+  .header .intro h1 {
+    font-size: 5em;
+  }
+  .header .intro h3 {
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  /* Style adjustments for viewports that meet the condition */
+  .contact-us-section form {
+    max-width: 40%;
+  }
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -259,93 +408,4 @@ textarea {
   h3 {
     page-break-after: avoid;
   }
-}
-
-
-
-
-/* ==========================================================================
-   Mein Style
-   ========================================================================== */
-
-.primary-hr {
-  background-color: #39398d;
-  height: 2px;
-  width: 25%;
-  margin: auto;
-}
-
-
-
-/*
-  HEADER
-*/
-.header {
-  background-image: url("../img/header.jpg");
-  background-size: cover;
-}
-.header .header-overlay {
-  background-image: linear-gradient(to right, #39398d, rgba(48, 48, 133, 0.3));
-}
-.header .intro {
-  height: 70vh;
-}
-.header .intro h1 {
-  font-size: 4em;
-}
-
-
-
-/*
-  SECTION 2
-*/
-.welcome-section .container > p {
-  max-width: 70%;
-}
-.welcome-section .container .row .col-sm-6:nth-child(1) .card {
-  border-bottom: 3px solid #39398d;
-}
-.welcome-section .container .row .col-sm-6:nth-child(2) .card {
-  border-bottom: 3px solid #6b6bcb;
-}
-.welcome-section .container .row .col-sm-6:nth-child(3) .card {
-  border-bottom: 3px solid #a1a1d6;
-}
-
-.welcome-section .container .row .card .card-body {
-  position: relative;
-  padding-top: 2rem;
-}
-.welcome-section .container .row .card .card-body:after {
-  content: attr(data-after);
-  z-index: 1;
-  position: absolute;
-  height: 3rem;
-  width: 3rem;
-  top: -1.5rem;
-  left: calc(50% - 1.5rem);
-  background-color: #39398d;
-  color: white;
-  border-radius: 50%;
-  opacity: .9;
-  padding-top: .7rem;
-  text-align: center;
-}
-
-
-/*
-  SECTION 3
-*/
-.what-we-doing-section {
-  background-color: #f1f1f1
-}
-.what-we-doing-section .container > p {
-  max-width: 70%;
-}
-
-.what-we-doing-section i {
-  font-size: 2rem;
-  color: #39398d;
-  border: 2px solid #39398d;
-  border-radius: 50%;
 }
