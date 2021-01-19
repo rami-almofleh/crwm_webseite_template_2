@@ -290,12 +290,62 @@ textarea {
 .header .intro {
   height: 70vh;
 }
+.header .intro h1 {
+  font-size: 4em;
+}
 
 
 
 /*
   SECTION 2
 */
-.welcome-section p {
-  max-width: 80%;
+.welcome-section .container > p {
+  max-width: 70%;
+}
+.welcome-section .container .row .col-sm-6:nth-child(1) .card {
+  border-bottom: 3px solid #39398d;
+}
+.welcome-section .container .row .col-sm-6:nth-child(2) .card {
+  border-bottom: 3px solid #6b6bcb;
+}
+.welcome-section .container .row .col-sm-6:nth-child(3) .card {
+  border-bottom: 3px solid #a1a1d6;
+}
+
+.welcome-section .container .row .card .card-body {
+  position: relative;
+  padding-top: 2rem;
+}
+.welcome-section .container .row .card .card-body:after {
+  content: attr(data-after);
+  z-index: 1;
+  position: absolute;
+  height: 3rem;
+  width: 3rem;
+  top: -1.5rem;
+  left: calc(50% - 1.5rem);
+  background-color: #39398d;
+  color: white;
+  border-radius: 50%;
+  opacity: .9;
+  padding-top: .7rem;
+  text-align: center;
+}
+
+
+/*
+  SECTION 3
+*/
+.what-we-doing-section {
+  background-color: #f1f1f1
+}
+.what-we-doing-section .container > p {
+  max-width: 70%;
+}
+
+.what-we-doing-section i {
+  font-size: 2rem;
+  color: #39398d;
+  border: 2px solid #39398d;
+  border-radius: 50%;
 }
